@@ -1,0 +1,82 @@
+body{
+    font-size: 18px;
+    display: grid;
+    grid-template-areas: 'header header header header' 
+                            'nav nav nav nav'
+                          'section section section aside'
+                          'batata batata batata batata'
+                          'footer footer footer footer';
+grid-template-rows: 10vh 10vh 60vh 70vh 30vh;
+grid-template-columns: 24vw 24vw 24vw 26.5vw;                        
+}       
+
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+header img{
+    height: 100%;
+    border-radius: 40px;
+
+}
+
+section{
+    grid-area: section;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* /align-items: center;  */
+}
+
+section div iframe{
+    width: 100%;
+}
+section div p{
+    text-align: center;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: grey;
+}
+
+aside{
+    grid-area: aside;
+    background-color: green;
+}
+
+.batata{
+    grid-area: batata;
+    background-image: url("img/neymar.jpg");
+
+}
+
+.fake p {
+    font-size: 3.2rem;
+}
+.teste-2{
+    font-size: 1.2rem;
+}
+
+.teste-3{
+    font-size: 1.2rem;
+}
